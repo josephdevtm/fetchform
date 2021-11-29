@@ -1,0 +1,32 @@
+{
+  "name": "fetchform",
+  "version": "1.0.0",
+  "description": "Fetch form elements data.",
+  "main": "lib/formdata.js",
+  "scripts": {
+    "build": "npm-run-all js-compile js-minify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js-compile": "rollup --config rollup.config.js --sourcemap",
+    "js-minify": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=lib/fetchform.js.map,includeSources,url=fetchform.min.js.map\" --output lib/fetchform.min.js lib/fetchform.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephdevtm/fetchform.git"
+  },
+  "keywords": [
+    "formdata",
+    "fetchform"
+  ],
+  "author": "JOSEPH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephdevtm/fetchform/issues"
+  },
+  "homepage": "https://github.com/josephdevtm/fetchform#readme",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.60.1",
+    "terser": "^5.10.0"
+  }
+}
