@@ -20,6 +20,11 @@ pnpm add fetchform
 
 ## Examples
 
+### CDN
+```html
+<script src="https://unpkg.com/fetchform@1.8.6/lib/fetchform.min.js"></script>
+```
+
 ### import
 ```js
 // CommonJS
