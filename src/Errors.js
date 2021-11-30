@@ -1,9 +1,9 @@
 class FetchFormError extends Error {
   constructor(message, status) {
-    super(message);
-    this.status = status;
-    this.name = 'FetchFormError';
+    super(message)
+    this.status = status
+    this.name = 'FetchFormError'
   }
 }
 
-export { FetchFormError };
+export { FetchFormError }
